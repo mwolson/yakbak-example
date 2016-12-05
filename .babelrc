@@ -1,0 +1,12 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    ["babel-plugin-module-alias", [
+      {"src": "./src/backend", "expose": "backend"},
+      {"src": "./src/clients", "expose": "clients"},
+      {"src": "./src/common", "expose": "common"},
+      {"src": "./test/js/test-common", "expose": "test-common"},
+      {"src": "./test/resources/mocks", "expose": "mocks"}
+    ]]
+  ]
+}
